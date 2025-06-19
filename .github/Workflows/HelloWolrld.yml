@@ -10,8 +10,8 @@ on:
       - production
 
 jobs:
-  hello_word:
+  hello_world:
     runs-on: ubuntu-latest
     steps:
-      - name: "Print hello world"
+      - name: "Hello World Workflolw"
         run: echo "hello world"
