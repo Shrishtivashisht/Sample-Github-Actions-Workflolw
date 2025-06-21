@@ -7,7 +7,7 @@ on:
             - test
 
 jobs:
-    on-push:
+    on_push:
         runs-on: ubuntu-latest
         steps:
             - name: "running on master push"
