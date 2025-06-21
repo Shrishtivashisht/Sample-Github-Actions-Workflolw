@@ -15,3 +15,6 @@ jobs:
     steps:
       - name: "Hello World Workflow"
         run: echo "hello world"
+      
+      - name: "print currert date"
+        run: date  
