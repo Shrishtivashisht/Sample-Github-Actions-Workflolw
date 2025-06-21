@@ -1,9 +1,9 @@
-name: "Hello World Workflolw"
+name: "Hello World Workflow"
 
 #controls when the action will run. Triggers the workflow on push to master or production branch.
 # on is used when we need to setup some events
 
-on:
+on:  
   push:
     branches:
       - master
@@ -13,5 +13,5 @@ jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
-      - name: "Hello World Workflolw"
+      - name: "Hello World Workflow"
         run: echo "hello world"
