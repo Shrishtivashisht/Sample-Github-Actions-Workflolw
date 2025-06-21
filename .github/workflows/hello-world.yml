@@ -1,13 +1,10 @@
-name: "Hello World Workflow"
+name: "Universal Workflow"
 
 #controls when the action will run. Triggers the workflow on push to master or production branch.
 # on is used when we need to setup some events
 
 on:  
   push:
-    branches:
-      - master
-      - production
 
 jobs:
   hello_world:
@@ -18,3 +15,10 @@ jobs:
       
       - name: "print currert date"
         run: date  
+
+
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Show push message"
+        run: echo "A new push is in place"      
